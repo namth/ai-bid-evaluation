@@ -1,0 +1,43 @@
+# Bí mật
+.env
+.env.*
+!.env.example
+deploy/.env
+
+# Dữ liệu thật (DEC-019)
+/File danh gia mau.xlsx
+samples/*
+!samples/README.md
+!samples/*-an-danh.*
+data/
+*.dump
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+
+# Node
+node_modules/
+.next/
+frontend/out/
+playwright-report/
+test-results/
+
+# OS
+.DS_Store
+
+# Phối hợp Claude ↔ Antigravity (file sinh ra khi chạy)
+handoff/digest.md
+handoff/logs/
+handoff/tasks/*/gate.json
+
+# Bộ phối hợp Claude ↔ Antigravity: chỉ giữ ở máy, không đưa lên repo public
+handoff/
+scripts/
+.agents/
+AGENTS.md
